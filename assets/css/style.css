@@ -184,7 +184,7 @@ body {
     width: 100%;
     padding: 86px 0px;
     position: relative;
-    /* min-height: 662px; */
+    min-height: 662px;
     height: 100%;
 }
 
@@ -206,6 +206,17 @@ body {
     /* max-height: 662px; */
     height: 662px;
     /* height: 100%; */
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+}
+
+.hero-image {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    max-width: 46.4%;
+    width: 100%;
+    height: 662px;
     overflow: hidden;
     aspect-ratio: 16 / 9;
 }
@@ -1079,17 +1090,235 @@ body {
     position: relative;
 }
 
-.acc_panel {
+.custom-accordion-panel {
     display: none;
     overflow: hidden;
     border-bottom: 1px solid #D1D5DB;
     padding: 12px 57px 27px 0px;
 }
 
-.acc_panel p {
+.custom-accordion-panel p {
     font-weight: 400;
     font-size: 18px;
     line-height: 130%;
     color: #000000;
 
 }
+
+
+/* footer section  */
+.footer-section {
+    padding-top: 60px;
+    padding-bottom: 36px;
+    background: #000000;
+}
+
+.footer-menu-list {
+    margin-bottom: 30px;
+}
+
+.footer-menu {
+    gap: 15px;
+}
+
+.footer-menu li a {
+    font-family: var(--poppins);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25.2px;
+    letter-spacing: 0.6px;
+    color: #FFFFFF;
+}
+
+.footer-middle-wrapper h4 {
+    font-family: var(--poppins);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23.4px;
+    letter-spacing: 0.6px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin-bottom: 19px;
+
+}
+
+.footer-middle-form {
+    max-width: 360px;
+    width: 100%;
+    height: 47px;
+    position: relative;
+}
+
+.footer-middle-form input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 0px 1px #1212128C;
+    padding-left: 12px;
+    color: #1212128C;
+    background-color: #FFFFFF;
+
+}
+
+.footer-middle-form button {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+    width: 44px;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer-middle-form button:hover {
+    box-shadow: 0px 0px 0px 1px #1212128C;
+}
+
+.footer-middle-right-wrapper {
+    gap: 16px;
+}
+
+.footer-middle-right-wrapper a:first-child {
+    border-radius: 999px;
+    background: #5433EB;
+    padding: 8px 12px 8px 8px;
+    font-family: var(--poppins);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.15px;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+.footer-middle-right-wrapper a:first-child img:first-child {
+    margin-right: 8px;
+}
+
+.footer-bottom-wrapper {
+    margin-top: 45px;
+    margin-bottom: 31px;
+}
+
+.footer-bottom-wrapper label {
+    font-family: var(--poppins);
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19.5px;
+    letter-spacing: 0.4px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+
+}
+
+.custom-select-container {
+    width: 201px;
+    height: 40px;
+    box-shadow: 0px 0px 0px 1px #1212128C;
+    background: white;
+    padding: 0px 10px;
+    height: 40px;
+
+}
+
+.custom-select-container select {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: transparent;
+    font-family: var(--poppins);
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19.5px;
+    letter-spacing: 0.4px;
+}
+
+.footer-bottom-right-wrapper img {
+    height: 30px;
+}
+
+.copyright-wrapper {
+    margin-top: 30px;
+}
+
+.copyright-wrapper p {
+    font-family: var(--poppins);
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 18.7px;
+    letter-spacing: 0.7px;
+    text-align: left;
+    color: #FFFFFF;
+    text-transform: capitalize;
+}
+
+
+/* `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+    .hero-image {
+        max-width: 100%;
+        z-index: -1;
+    }
+
+    .hero-product-content-info span {
+        color: #FFFFFF;
+    }
+
+    .hero-content h3 {
+        color: #FFFFFF;
+    }
+
+    .hero-content p {
+        color: #FFFFFF;
+    }
+}
+
+/* `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {}
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {}
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {}
+
+
+
+
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .hero-section {
+        padding: 0;
+    }
+
+    .hero-image {
+        max-height: 390px;
+        position: relative;
+    }
+
+    .hero-content {
+        margin-top: 31px;
+    }
+
+    .hero-content h3 {
+        font-weight: 400;
+        font-size: 29px;
+        line-height: 30.4px;
+        color: #000000;
+
+    }
+
+    .hero-content p {
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 125%;
+        text-align: center;
+        color: #000000;
+
+    }
+}
+
+/* `xs` returns only a ruleset and no media query
+// ... { ... } */

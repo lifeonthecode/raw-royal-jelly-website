@@ -11,6 +11,11 @@ window.addEventListener("scroll", () => {
     }
 });
 
+const currentYear = document.getElementById('currentYear');
+let copyrightDate = new Date();
+copyrightDate = copyrightDate.getFullYear();
+currentYear.textContent = copyrightDate;
+
 
 const toggle = document.querySelector('.menu-toggle');
 const mobileMenuContainer = document.querySelector('.mobile-menu-container');
@@ -173,35 +178,11 @@ setInterval(updateTime, 60000);
 updateTime();
 
 
-const currentYear = document.getElementById('currentYear');
-let copyrightDate = new Date();
-copyrightDate = copyrightDate.getFullYear();
-currentYear.textContent = copyrightDate;
+// const currentYear = document.getElementById('currentYear');
+// let copyrightDate = new Date();
+// copyrightDate = copyrightDate.getFullYear();
+// currentYear.textContent = copyrightDate;
 
-// document.addEventListener('DOMContentLoaded', () => {
-//   const card = document.getElementById('flip-card');
-//   const buttons = card.querySelectorAll('.flip-btn');
-
-//   buttons.forEach(btn => {
-//     btn.style.visibility = 'visible';
-
-//     btn.addEventListener('click', (e) => {
-//       e.stopPropagation(); // future safety
-//       card.classList.toggle('do-flip');
-//     });
-//   });
-// });
-
-document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('.project-flip-card').forEach(card => {
-        card.querySelectorAll('.flip-btn').forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                e.stopPropagation();
-                card.classList.toggle('is-flipped');
-            });
-        });
-    });
-});
 
 
 
@@ -235,4 +216,26 @@ modal.addEventListener("click", (e) => {
         modal.style.display = "none";
     }
 });
+
+
+
+// SELECT MENU
+const optionMenu = document.querySelector(".select-menu"),
+  selectBtn = optionMenu.querySelector(".select-btn"),
+  options = optionMenu.querySelectorAll(".option"),
+  sBtn_text = optionMenu.querySelector(".sBtn-text");
+
+selectBtn.addEventListener("click", () =>
+  optionMenu.classList.toggle("active")
+);
+
+options.forEach((option) => {
+  option.addEventListener("click", () => {
+    let selectedOption = option.querySelector(".option-text").innerText;
+    sBtn_text.innerText = selectedOption;
+
+    optionMenu.classList.remove("active");
+  });
+});
+
 

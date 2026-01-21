@@ -50,22 +50,14 @@
 
 
     <!-- start hero section  -->
-    <section class="hero-section d-flex align-items-center justify-content-center">
+    <section class="hero-section d-block d-sm-flex align-items-center justify-content-center">
         <!-- hero image  -->
         <div class="hero-image">
-            <!-- <img src="assets/images/hero/hero.png" alt="hero"> -->
-            <!-- <video width="100%" height="600" controls autoplay loop muted poster="assets/images/hero/hero.png">
-                <source src="assets/videos/hero-video.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video> -->
             <video width="100%" class="hero-video" autoplay loop muted playsinline preload="metadata"
                 poster="assets/images/hero/hero.png">
                 <source src="assets/images/hero/hero-video.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-
-
-
         </div>
 
 
@@ -73,7 +65,7 @@
             <div class="hero-content-container">
 
                 <div class="hero-content d-flex flex-column align-items-center">
-                    <div class="hero-product-content-info d-flex align-items-center justify-content-center">
+                    <div class="hero-product-content-info d-none d-sm-flex align-items-center justify-content-xxl-center">
                         <img src="assets/images/icons/star.svg" alt="star">
                         <img src="assets/images/icons/star.svg" alt="star">
                         <img src="assets/images/icons/star.svg" alt="star">
@@ -88,7 +80,7 @@
                 </div>
 
                 <!-- slider  -->
-                <div class="hero-review-container d-flex align-items-center justify-content-center">
+                <div class="hero-review-container d-none d-xxl-flex align-items-center justify-content-center">
                     <div class="hero-review-slider-container">
                         <div class="hero-content-bottom">
                             <div
@@ -749,13 +741,13 @@
 
             <div class="accordion-container">
 
-                <ul class="acc custom-accordion">
+                <ul class="custom-accordion">
                     <li>
                         <button class="custom-accordion-btn">
                             <!-- <h2>Holden</h2> -->
                             What is Raw Royal Jelly?
                         </button>
-                        <div class="acc_panel">
+                        <div class="custom-accordion-panel">
                             <p>Royal jelly is a product of animal origin, secreted exclusively by nurse worker bees,
                                 between the age of 5 and 14 days of adult life, as a secretion of certain glands located
                                 on their heads. It is a light yellow substance of a protein nature, with a
@@ -766,7 +758,7 @@
                         <button class="custom-accordion-btn">
                             How do I take Royal Jelly?
                         </button>
-                        <div class="acc_panel">
+                        <div class="custom-accordion-panel">
                             <p>The Ford Motor Company (commonly referred to as simply Ford) is an American multinational
                                 automaker headquartered in Dearborn, Michigan, a suburb of Detroit. It was founded by
                                 Henry
@@ -777,7 +769,7 @@
                         <button class="custom-accordion-btn">
                             When do I take it?
                         </button>
-                        <div class="acc_panel">
+                        <div class="custom-accordion-panel">
                             <p>Toyota Motor Corporation is a Japanese automotive manufacturer which was founded by
                                 Kiichiro
                                 Toyoda in 1937 as a spinoff from his father's company Toyota Industries, which is
@@ -789,7 +781,7 @@
                         <button class="custom-accordion-btn">
                             How much do I need to take, and can I accidentally take too much?
                         </button>
-                        <div class="acc_panel">
+                        <div class="custom-accordion-panel">
                             <p>Toyota Motor Corporation is a Japanese automotive manufacturer which was founded by
                                 Kiichiro
                                 Toyoda in 1937 as a spinoff from his father's company Toyota Industries, which is
@@ -801,7 +793,7 @@
                         <button class="custom-accordion-btn">
                             How can I store it?
                         </button>
-                        <div class="acc_panel">
+                        <div class="custom-accordion-panel">
                             <p>Toyota Motor Corporation is a Japanese automotive manufacturer which was founded by
                                 Kiichiro
                                 Toyoda in 1937 as a spinoff from his father's company Toyota Industries, which is
@@ -813,7 +805,7 @@
                         <button class="custom-accordion-btn">
                             How long does it take until I start seeing the benefits?
                         </button>
-                        <div class="acc_panel">
+                        <div class="custom-accordion-panel">
                             <p>Toyota Motor Corporation is a Japanese automotive manufacturer which was founded by
                                 Kiichiro
                                 Toyoda in 1937 as a spinoff from his father's company Toyota Industries, which is
@@ -826,6 +818,79 @@
         </div>
     </section>
     <!-- end faq section  -->
+
+
+    <!-- footer section  -->
+    <footer class="footer-section d-flex align-items-center justify-content-center w-100">
+        <div class="container">
+            <div class="footer-menu-list w-100">
+                <nav class="d-flex align-items-center justify-content-center w-100">
+                    <ul class="d-flex align-items-center footer-menu">
+                        <li><a href="#">Shipping Details</a></li>
+                        <li><a href="#">Refunds and Returns</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="footer-middle-wrapper">
+                <h4>Sign Up & Get 10% OFF</h4>
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="footer-middle-left-wrapper">
+                            <form class="footer-middle-form">
+                                <input type="email" placeholder="Email" required>
+                                <button type="submit"><img src="assets/images/icons/arrow-right.svg" alt=""></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="footer-middle-right-wrapper d-flex align-items-center justify-content-end">
+                            <a href="#"><img src="assets/images/icons/love.svg" alt="love"> Follow on<img
+                                    src="assets/images/icons/shop.svg" alt="">
+                            </a>
+
+                            <a href="#"><img src="assets/images/icons/instagram.svg" alt=""></a>
+                            <a href="#"><img src="assets/images/icons/tiktok.svg" alt=""></a>
+                            <a href="#"><img src="assets/images/icons/twitter.svg" alt=""></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer bottom  -->
+            <div class="footer-bottom-wrapper">
+                <label for="country_region">country/region</label>
+                <div class="row align-items-center">
+                    <div class="col-lg-5 col-md-5 col-12">
+                        <div class="footer-bottom-left-wrapper">
+                            <div class="custom-select-container">
+                                <select name="select" id="country_region">
+                                    <option value="united state"> united | USD $</option>
+                                    <option value="united kingdom"> united kingdom | PUD $</option>
+                                    <option value="bangladesh"> bangladesh | BD $</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-7 col-12">
+                        <div class="footer-bottom-right-wrapper d-flex justify-content-end">
+                            <img src="assets/images/icons/payment-cards.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="copyright-wrapper">
+                    <p>© <span id="currentYear"></span>, Raw Royal Jelly</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer section  -->
 
 
 
@@ -867,6 +932,10 @@
                 }
             });
         });
+
+
+
+
 
     </script>
 
