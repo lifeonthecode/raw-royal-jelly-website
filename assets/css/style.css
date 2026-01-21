@@ -566,6 +566,7 @@ body {
     height: 444px;
     position: relative;
     border-radius: 4px;
+    overflow: hidden;
 
 }
 
@@ -575,6 +576,12 @@ body {
     object-fit: cover;
     object-position: center;
     border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.share-experience-wrapper:hover img {
+    transform: scale(1.2);
 }
 
 .share-experience-btn-wrapper {
@@ -622,10 +629,6 @@ body {
     margin-bottom: 43px;
 }
 
-/* .online-studies-right-wrapper-inner {
-    column-gap: 44px;
-    row-gap: 34px;
-} */
 
 .online-studies-right-wrapper-details {
     max-width: 328px;
@@ -883,7 +886,7 @@ body {
 
 .your-secret-section {
     padding-top: 132px;
-    padding-bottom: 35px;
+    /* padding-bottom: 35px; */
 }
 
 .your-secret-left-wrapper h3 {
@@ -950,7 +953,6 @@ body {
 .your-secret-right-wrapper {
     width: 100%;
     height: 600px;
-
 }
 
 .your-secret-right-wrapper img {
@@ -958,4 +960,136 @@ body {
     height: 100%;
     object-fit: contain;
     object-position: top;
+}
+
+
+/* delivery section  */
+.delivery-section {
+    background: #F5F5DC;
+    padding: 50px 0px;
+}
+
+.delivery-wrapper {
+    gap: 10px;
+}
+
+.delivery-wrapper img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.delivery-wrapper p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    color: #000000;
+    max-width: 138px;
+}
+
+
+/* faq section  */
+.faq-section {
+    padding: 83px 0px;
+}
+
+.faq-section .container .section-heading {
+    max-width: 485px;
+}
+
+
+.accordion-container {
+    margin-top: 48px;
+}
+
+.custom-accordion {
+    /* margin: 90px 0; */
+    overflow: hidden;
+    padding: 0;
+}
+
+.custom-accordion li {
+    padding: 0;
+}
+
+.custom-accordion-btn {
+    border: none;
+    border-bottom: 1px solid #D1D5DB;
+    cursor: pointer;
+    display: block;
+    outline: none;
+    padding: 16px 57px 20px 0px;
+    position: relative;
+    text-align: left;
+    width: 100%;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #000000;
+
+}
+
+.custom-accordion-btn:before {
+    background-color: #FFB703;
+    content: '';
+    height: 2px;
+    margin-right: 37px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    width: 14px;
+}
+
+.custom-accordion-btn:after {
+    background: #FFB703;
+    content: '';
+    height: 2px;
+    margin-right: 37px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 14px;
+}
+
+.custom-accordion-btn.active:before {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.custom-accordion-btn.active {
+    border: none;
+}
+
+.custom-accordion-btn.active h2,
+.custom-accordion-btn:focus h2 {
+    position: relative;
+}
+
+.acc_panel {
+    display: none;
+    overflow: hidden;
+    border-bottom: 1px solid #D1D5DB;
+    padding: 12px 57px 27px 0px;
+}
+
+.acc_panel p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: #000000;
+
 }
