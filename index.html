@@ -16,18 +16,48 @@
 <body>
 
 
+    <!-- MOBILE MENU  -->
+    <!-- mobile menu  -->
+    <div id="mobile-menu-container" class="mobile-menu-container d-md-none d-flex flex-column justify-content-between">
+        <div class="mobile-menu-wrapper">
+            <nav class="mobile-nav">
+                <menu class="mobile-menu navbar-menu d-flex flex-column">
+                    <li><a href="#about">shop</a></li>
+                    <li><a href="#projects">FAQ</a></li>
+                    <li><a href="#services">Affiliate Program</a></li>
+                </menu>
+            </nav>
+        </div>
+    </div>
+
+
     <!-- start header section  -->
     <header class="header-section d-flex align-items-center justify-content-center">
         <div class="container">
             <div class="row align-items-center">
+                <div class="col-4 d-block d-md-none">
+
+                    <!-- <button class="menu-bar-icon"><img src="assets/images/icons/menu-bar.svg" alt=""></button> -->
+                    <div class="mobile-menu-wrapper d-flex justify-content-start">
+                        <div class="hamburger" id="menu-bar-btn">
+                            <input type="checkbox" class="hamburger-init">
+                            <div class="menu-bar">
+                                <div class="menu-bar1"></div>
+                                <div class="menu-bar2"></div>
+                                <div class="menu-bar3"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
                 <!-- logo wrapper  -->
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-3 col-4">
                     <div class="logo-wrapper">
                         <a href="index.html"><img src="assets/images/logo/logo.svg" alt="logo"></a>
                     </div>
                 </div>
                 <!-- menu wrapper  -->
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-5 d-none d-md-block">
                     <nav class="desktop-menu">
                         <ul class="menu-list d-flex align-items-center">
                             <li><a href="index.html">show</a></li>
@@ -37,9 +67,9 @@
                     </nav>
                 </div>
                 <!-- HEADER RIGHT WRAPPER  -->
-                <div class="col-lg-3">
-                    <div class="header-right d-flex align-items-center">
-                        <a href="#">show now</a>
+                <div class="col-lg-3 col-md-4 col-4">
+                    <div class="header-right d-flex align-items-center justify-content-end justify-content-md-between">
+                        <a href="#" class="d-none d-md-block">show now</a>
                         <a href="#"><img src="assets/images/icons/cart.svg" alt="cart"> <span>1</span></a>
                     </div>
                 </div>
@@ -65,7 +95,8 @@
             <div class="hero-content-container">
 
                 <div class="hero-content d-flex flex-column align-items-center">
-                    <div class="hero-product-content-info d-none d-sm-flex align-items-center justify-content-xxl-center">
+                    <div
+                        class="hero-product-content-info d-none d-sm-flex align-items-center justify-content-xxl-center">
                         <img src="assets/images/icons/star.svg" alt="star">
                         <img src="assets/images/icons/star.svg" alt="star">
                         <img src="assets/images/icons/star.svg" alt="star">
@@ -76,6 +107,8 @@
                     <h3>Unlock Your Full Potential with Raw Royal Jelly</h3>
                     <p>Your daily boost for unstoppable energy, sharper focus, and lasting vitality.</p>
                     <a href="#">Shop Royal Jelly <img src="assets/images/icons/arrow-right.svg" alt="arrow right"></a>
+                    <span class="d-flex align-items-center justify-content-center d-md-none"><img
+                            src="assets/images/icons/check.svg" alt="">30-Day Satisfaction Guarantee</span>
 
                 </div>
 
@@ -157,6 +190,82 @@
         </div>
     </section>
     <!-- end hero section  -->
+
+    <!-- slider  -->
+    <div class="review-slider-section d-block d-xxl-none">
+        <div class="review-section-review-container">
+            <div class="container">
+                <div class="review-slider-container">
+                    <div
+                        class="review-slider-item d-flex flex-column flex-md-row justify-content-center align-items-center">
+                        <div
+                            class="review-slider-item-left d-flex flex-sm-column align-items-center  align-items-sm-start">
+                            <div class="review-slider-item-rating d-flex align-items-center">
+
+                                <img src="assets/images/icons/star.svg" alt="star">
+                                <img src="assets/images/icons/star.svg" alt="star">
+                                <img src="assets/images/icons/star.svg" alt="star">
+                                <img src="assets/images/icons/star.svg" alt="star">
+                                <img src="assets/images/icons/star.svg" alt="star">
+                            </div>
+                            <span><strong>47,281+</strong> Verified 5-star reviews*</span>
+                        </div>
+
+                        <div
+                            class="review-slider-item-inner d-flex flex-column align-items-center align-items-md-start ">
+                            <p>It's been 2 weeks since I started taking Raw Royal Jelly every day before going to work
+                                and I already feel the difference.</p>
+                            <h4>nicola c,, 18/01/2026</h4>
+                        </div>
+                    </div>
+                    <div
+                        class="review-slider-item d-flex flex-column flex-md-row justify-content-center align-items-center">
+                        <div
+                            class="review-slider-item-left d-flex flex-sm-column align-items-center  align-items-sm-start">
+                            <div class="review-slider-item-rating d-flex align-items-center">
+
+                                <img src="assets/images/icons/star.svg" alt="star">
+                                <img src="assets/images/icons/star.svg" alt="star">
+                                <img src="assets/images/icons/star.svg" alt="star">
+                                <img src="assets/images/icons/star.svg" alt="star">
+                                <img src="assets/images/icons/star.svg" alt="star">
+                            </div>
+                            <span><strong>47,281+</strong> Verified 5-star reviews*</span>
+                        </div>
+
+                        <div
+                            class="review-slider-item-inner d-flex flex-column align-items-center align-items-md-start ">
+                            <p>It's been 2 weeks since I started taking Raw Royal Jelly every day before going to work
+                                and I already feel the difference.</p>
+                            <h4>nicola c,, 18/01/2026</h4>
+                        </div>
+                    </div>
+                    <div
+                        class="review-slider-item d-flex flex-column flex-md-row justify-content-center align-items-center">
+                        <div
+                            class="review-slider-item-left d-flex flex-sm-column align-items-center  align-items-sm-start">
+                            <div class="review-slider-item-rating d-flex align-items-center">
+
+                                <img src="assets/images/icons/star.svg" alt="star">
+                                <img src="assets/images/icons/star.svg" alt="star">
+                                <img src="assets/images/icons/star.svg" alt="star">
+                                <img src="assets/images/icons/star.svg" alt="star">
+                                <img src="assets/images/icons/star.svg" alt="star">
+                            </div>
+                            <span><strong>47,281+</strong> Verified 5-star reviews*</span>
+                        </div>
+
+                        <div
+                            class="review-slider-item-inner d-flex flex-column align-items-center align-items-md-start ">
+                            <p>It's been 2 weeks since I started taking Raw Royal Jelly every day before going to work
+                                and I already feel the difference.</p>
+                            <h4>nicola c,, 18/01/2026</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- start why section  -->
@@ -248,8 +357,8 @@
 
             <div class="share-experience-container">
 
-                <div class="row">
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="row gy-4 gy-lg-0">
+                    <div class="col-lg-3 col-md-6 col-6">
                         <div class="share-experience-wrapper">
                             <img src="assets/images/share/share-1.jpg" alt="share 1">
                             <div class="share-experience-btn-wrapper">
@@ -282,7 +391,7 @@
                         </div>
 
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="col-lg-3 col-md-6 col-6">
                         <div class="share-experience-wrapper">
                             <img src="assets/images/share/share-2.png" alt="share 1">
                             <div class="share-experience-btn-wrapper">
@@ -321,7 +430,7 @@
                         </div>
 
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="col-lg-3 col-md-6 col-6">
                         <div class="share-experience-wrapper">
                             <img src="assets/images/share/share-3.jpg" alt="share 1">
                             <div class="share-experience-btn-wrapper">
@@ -360,7 +469,7 @@
                         </div>
 
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="col-lg-3 col-md-6 col-6">
                         <div class="share-experience-wrapper">
                             <img src="assets/images/share/share-4.png" alt="share 1">
                             <div class="share-experience-btn-wrapper">
@@ -424,25 +533,25 @@
                         <h5>A Clinical Study on Royal Jelly Showed:</h5>
 
                         <div class="row gy-4">
-                            <div class="col-6">
+                            <div class="col-md-6 col-12">
                                 <div class="online-studies-right-wrapper-details">
                                     <h3>89%</h3>
                                     <p>of participants reported higher energy levels after 1 month.</p>
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-md-6 col-12">
                                 <div class="online-studies-right-wrapper-details">
                                     <h3>92%</h3>
                                     <p>of participants reduced fatigue during the day after 2 months</p>
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-md-6 col-12">
                                 <div class="online-studies-right-wrapper-details">
                                     <h3>84%</h3>
                                     <p>of participants noticed better concentration after 2 months</p>
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-md-6 col-12">
                                 <div class="online-studies-right-wrapper-details">
                                     <h3>76%</h3>
                                     <p>of participants experienced increased libido and vitality after 1 month.</p>
@@ -621,32 +730,41 @@
                     <div class="your-secret-left-wrapper">
                         <h3>Your Secret to Energy, Focus, and Peak Vitality Every Day</h3>
                         <p>Our pure royal jelly naturally supports your energy levels, enhances mental clarity, and
-                            promotes hormonal balance for overall wellness.</p>
+                            promotes hormonal balance for overall wellness.
+                        </p>
+
+                        <div class="your-secret-left-bottom-wrapper d-flex flex-column align-items-center">
+                            <a href="#" class="common-btn">shop royal jelly <img
+                                    src="assets/images/icons/arrow-right.svg" alt=""></a>
+                            <p class="d-flex align-items-center"><img src="assets/images/icons/check.svg" alt=""> 30-Day
+                                Money Back Guarantee</p>
+                        </div>
+
                         <h4>In a study based on participants using Royal Jelly:</h4>
                         <div class="row gy-3">
                             <div class="col-6">
-                                <div class="your-secret-list-item d-flex alig-items-center">
+                                <div class="your-secret-list-item d-flex align-items-center">
                                     <img src="assets/images/icons/tick-2.svg" alt="tick "> <span>
                                         90% Felt Increased Energy Throughout the Day
                                     </span>
                                 </div>
                             </div>
                             <div class="col-6">
-                                <div class="your-secret-list-item d-flex alig-items-center">
+                                <div class="your-secret-list-item d-flex align-items-center">
                                     <img src="assets/images/icons/tick-2.svg" alt="tick "> <span>
                                         88% Saw a Boost in Overall Wellness
                                     </span>
                                 </div>
                             </div>
                             <div class="col-6">
-                                <div class="your-secret-list-item d-flex alig-items-center">
+                                <div class="your-secret-list-item d-flex align-items-center">
                                     <img src="assets/images/icons/tick-2.svg" alt="tick "> <span>
                                         85% Reported Improved Mental Clarity and Focus
                                     </span>
                                 </div>
                             </div>
                             <div class="col-6">
-                                <div class="your-secret-list-item d-flex alig-items-center">
+                                <div class="your-secret-list-item d-flex align-items-center">
                                     <img src="assets/images/icons/tick-2.svg" alt="tick ">
                                     <span>
                                         80% Reported Feeling Less Stressed
@@ -654,7 +772,7 @@
                                 </div>
                             </div>
                             <div class="col-6">
-                                <div class="your-secret-list-item d-flex alig-items-center">
+                                <div class="your-secret-list-item d-flex align-items-center">
                                     <img src="assets/images/icons/tick-2.svg" alt="tick ">
                                     <span>
                                         83% Experienced Enhanced Libido
@@ -662,7 +780,7 @@
                                 </div>
                             </div>
                             <div class="col-6">
-                                <div class="your-secret-list-item d-flex alig-items-center">
+                                <div class="your-secret-list-item d-flex align-items-center">
                                     <img src="assets/images/icons/tick-2.svg" alt="tick ">
                                     <span>
                                         78% Noticed Improved Sleep Quality
@@ -671,7 +789,8 @@
                             </div>
                         </div>
 
-                        <div class="your-secret-left-bottom-wrapper d-flex flex-column align-items-center">
+                        <div
+                            class="your-secret-left-bottom-wrapper d-flex flex-column align-items-center d-none d-md-block">
                             <a href="#" class="common-btn">shop royal jelly <img
                                     src="assets/images/icons/arrow-right.svg" alt=""></a>
                             <p class="d-flex align-items-center"><img src="assets/images/icons/check.svg" alt=""> 30-Day
@@ -694,7 +813,7 @@
     <!-- delivery section  -->
     <section class="delivery-section d-flex align-items-center justify-content-center w-100">
         <div class="container">
-            <div class="row align-items-center">
+            <div class="row gy-3 gy-md-0 align-items-center">
                 <div class="col-lg-3 col-md-3 col-sm-6 col-6">
                     <div class="delivery-wrapper d-flex flex-column align-items-center">
                         <img src="assets/images/icons/delivery-1.svg" alt="">
@@ -824,8 +943,8 @@
     <footer class="footer-section d-flex align-items-center justify-content-center w-100">
         <div class="container">
             <div class="footer-menu-list w-100">
-                <nav class="d-flex align-items-center justify-content-center w-100">
-                    <ul class="d-flex align-items-center footer-menu">
+                <nav class="d-md-flex align-items-center justify-content-center w-100">
+                    <ul class="d-flex flex-column flex-md-row align-items-md-center footer-menu">
                         <li><a href="#">Shipping Details</a></li>
                         <li><a href="#">Refunds and Returns</a></li>
                         <li><a href="#">Terms of Service</a></li>
@@ -839,7 +958,7 @@
             <div class="footer-middle-wrapper">
                 <h4>Sign Up & Get 10% OFF</h4>
                 <div class="row align-items-center">
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="col-lg-6 col-md-6 col-12">
                         <div class="footer-middle-left-wrapper">
                             <form class="footer-middle-form">
                                 <input type="email" placeholder="Email" required>
@@ -847,15 +966,19 @@
                             </form>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-                        <div class="footer-middle-right-wrapper d-flex align-items-center justify-content-end">
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div
+                            class="footer-middle-right-wrapper d-flex flex-column flex-md-row align-items-center justify-content-end">
                             <a href="#"><img src="assets/images/icons/love.svg" alt="love"> Follow on<img
                                     src="assets/images/icons/shop.svg" alt="">
                             </a>
+                            <div class="social-media-btns d-flex align-items-center">
 
-                            <a href="#"><img src="assets/images/icons/instagram.svg" alt=""></a>
-                            <a href="#"><img src="assets/images/icons/tiktok.svg" alt=""></a>
-                            <a href="#"><img src="assets/images/icons/twitter.svg" alt=""></a>
+                                <a href="#"><img src="assets/images/icons/instagram.svg" alt=""></a>
+                                <a href="#"><img src="assets/images/icons/tiktok.svg" alt=""></a>
+                                <a href="#"><img src="assets/images/icons/twitter.svg" alt=""></a>
+                            </div>
+
 
                         </div>
                     </div>
@@ -878,7 +1001,7 @@
                         </div>
                     </div>
                     <div class="col-lg-7 col-md-7 col-12">
-                        <div class="footer-bottom-right-wrapper d-flex justify-content-end">
+                        <div class="footer-bottom-right-wrapper d-flex justify-content-center justify-content-md-end">
                             <img src="assets/images/icons/payment-cards.svg" alt="">
                         </div>
                     </div>
@@ -900,44 +1023,51 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/main.js"></script>
-    <script>
-
-        $(document).ready(function () {
-            $('.hero-review-slider-container').slick({
-                dots: true,
-                infinite: true,
-                speed: 800,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 2500,
-                cssEase: 'ease-in-out',
-                arrows: false
-            });
+   <script>
+    $(document).ready(function () {
+        // Hero review slider
+        $('.hero-review-slider-container').slick({
+            dots: true,
+            infinite: true,
+            speed: 800,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2500,
+            cssEase: 'ease-in-out',
+            arrows: false
         });
 
-        $(function () {
-            $('.custom-accordion-btn').on('click', function (e) {
-                e.preventDefault();
-                if ($(this).hasClass('active')) {
-                    $(this).removeClass('active');
-                    $(this).next()
-                        .stop()
-                        .slideUp(300);
-                } else {
-                    $(this).addClass('active');
-                    $(this).next()
-                        .stop()
-                        .slideDown(300);
-                }
-            });
+        // Review slider
+        $('.review-slider-container').slick({
+            dots: true,
+            infinite: true,
+            speed: 800,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2500,
+            cssEase: 'ease-in-out',
+            arrows: false
         });
 
+        // Accordion toggle
+        $('.custom-accordion-btn').on('click', function (e) {
+            e.preventDefault();
+            const $btn = $(this);
+            const $content = $btn.next();
 
+            if ($btn.hasClass('active')) {
+                $btn.removeClass('active');
+                $content.stop().slideUp(300);
+            } else {
+                $btn.addClass('active');
+                $content.stop().slideDown(300);
+            }
+        });
+    });
+</script>
 
-
-
-    </script>
 
 </body>
 
